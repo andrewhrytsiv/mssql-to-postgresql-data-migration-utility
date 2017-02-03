@@ -1,29 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <left>
-      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-        <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
-        </columns>
-      </TableView>
-   </left>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-            <TextArea prefHeight="44.0" prefWidth="400.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clear All Tables in PostgreSQl Database">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin></Text>
+            <TextArea minHeight="350.0" prefHeight="200.0" prefWidth="200.0" />
+            <HBox prefWidth="200.0">
+               <children>
+                  <Pane maxHeight="35.0" prefHeight="43.0" prefWidth="737.0" HBox.hgrow="ALWAYS" />
+                  <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Run Sql">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Output:">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin></Text>
+            <TextArea minHeight="90.0" prefHeight="44.0" prefWidth="400.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Previous">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" text="Next">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children>
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </BorderPane.margin>
       </VBox>
    </center>
    <top>
@@ -47,4 +72,15 @@
         </menus>
       </MenuBar>
    </top>
+   <left>
+      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </TableView>
+   </left>
 </BorderPane>

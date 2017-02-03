@@ -139,13 +139,13 @@
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Server Port" GridPane.rowIndex="1" />
                         <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Database Password" GridPane.rowIndex="4" />
-                        <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="4" />
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Retype Password" GridPane.rowIndex="5" />
-                        <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="5" />
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Database Name" GridPane.rowIndex="2" />
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" GridPane.rowIndex="3" />
                         <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
                         <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="5" />
                      </children>
                      <VBox.margin>
                         <Insets left="25.0" />
@@ -180,4 +180,16 @@
         </menus>
       </MenuBar>
    </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Pane maxHeight="35.0" prefHeight="35.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" text="Next">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
 </BorderPane>
