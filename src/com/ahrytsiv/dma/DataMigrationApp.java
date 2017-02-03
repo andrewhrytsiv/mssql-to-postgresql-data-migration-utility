@@ -13,14 +13,14 @@ public class DataMigrationApp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-       /* Parent root = FXMLLoader.load(getClass().getResource("setup.fxml"));
+       /* Parent root = FXMLLoader.load(getClass().getResource("setup-screen-ui.fxml"));
         primaryStage.setTitle("Data Migration Application");
         primaryStage.setScene(new Scene(root, 1024, 600));
         primaryStage.show();*/
         try {
             stage = primaryStage;
-//            openSetupScreen();
-            openCleanupScreen();
+            openSetupScreen();
+//            openCleanupScreen();
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
@@ -33,7 +33,7 @@ public class DataMigrationApp extends Application {
 
     private void openSetupScreen() {
         try {
-            replaceSceneContent("setup.fxml");
+            replaceSceneContent("setup-screen-ui.fxml");
             stage.show();
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -42,7 +42,7 @@ public class DataMigrationApp extends Application {
 
     private void openCleanupScreen() {
         try {
-            replaceSceneContent("cleanup.fxml");
+            replaceSceneContent("cleanup-screen-ui.fxml");
             stage.show();
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
